@@ -1,0 +1,19 @@
+.pagename {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $banner-offset;
+  bottom: $header-height - $banner-height - $banner-offset;
+
+  text-align: center;
+  font-size: 0;
+}
+
+.pagename a::after {
+  content: "";
+  background: url(%%banner%%) 100% no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: $banner-width;
+  height: $banner-height;
+}

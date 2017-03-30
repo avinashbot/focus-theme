@@ -1,4 +1,5 @@
 @import "variables";
+@import "banner";
 @import "tab_menu";
 @import "submit_button";
 @import "footer";
@@ -68,27 +69,7 @@ body:not(.res) #header-bottom-right {
 
 #header-bottom-left {
   position: relative;
-  height: 200px;
-}
-
-.pagename {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 15px;
-  bottom: 35px;
-
-  text-align: center;
-  font-size: 0;
-}
-
-.pagename a::after {
-  content: "";
-  background: url(%%reddlogo%%) 100% no-repeat;
-  background-size: 100%;
-  display: inline-block;
-  width: 450px;
-  height: 150px;
+  height: $header-height;
 }
 
 #header-img {
@@ -97,13 +78,19 @@ body:not(.res) #header-bottom-right {
   left: -30px;
   height: 50px;
   width: 50px;
-  border: 5px solid #fcfcfc;
+  border: 5px solid $page-background-color;
   border-radius: 50px;
   z-index: 50;
 }
 
+#header-img:hover {
+  height: 45px;
+  width: 45px;
+  border-width: 7.5px;
+}
+
 .res-nightmode #header-img {
-  border: 5px solid #262626;
+  border-color: #262626;
 }
 
 .sidebox.create {

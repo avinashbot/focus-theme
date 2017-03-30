@@ -1,9 +1,10 @@
 #header-bottom-left .tabmenu {
   // Stick the tab menu to the bottom of the header.
   position: absolute;
-  bottom: 2px; // for padding 2px on bottom of li
+  bottom: 0; // for padding 2px on bottom of li
   left: 0;
   right: 0;
+  padding: 2px;
   text-align: center;
   overflow: hidden;
 
@@ -38,12 +39,11 @@
     &.selected {
       a {
         color: orangered;
-        &, &:hover {
-          border-bottom: 2px solid orangered;
-          border-bottom: 2px solid orangered;
+        border-bottom: 2px solid orangered;
+        &:hover {
+          border-bottom: 2px solid lighten(orangered, 20%);
         }
       }
     }
   }
-
 }
