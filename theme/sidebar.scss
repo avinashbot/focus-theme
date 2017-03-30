@@ -3,7 +3,7 @@
   margin: -($header-height + $header-shortcuts-height) 0 0 0;
 
   .spacer {
-    margin-left: $sidebar-padding;
+    margin: 0 0 10px $sidebar-padding;
     width: $sidebar-width;
   }
 
@@ -17,6 +17,10 @@
   }
 
   .redditname {
-    display: none;
+    margin-bottom: 0;
+
+    &::before {
+      content: "/r/";
+    }
   }
 }

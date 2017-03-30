@@ -18,6 +18,10 @@
   content: " (";
 }
 
-.users-online .word::after {
-  content: ")";
+.users-online .word {
+  display: none;
+}
+
+.users-online::after {
+  content: $users-online-word + " here now)";
 }
