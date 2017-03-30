@@ -1,5 +1,6 @@
 .side {
   width: $content-right-spacing;
+  min-width: $sidebar-width + $sidebar-padding;
   margin: -($header-height + $header-shortcuts-height) 0 0 0;
 
   .spacer {
