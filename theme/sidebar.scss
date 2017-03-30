@@ -3,17 +3,17 @@
   margin: -($header-height + $header-shortcuts-height) 0 0 0;
 
   .spacer {
-    padding-left: $sidebar-padding;
-    width: 100%;
-    max-width: $sidebar-width;
+    margin-left: $sidebar-padding;
+    width: $sidebar-width;
+  }
+
+  // Search Bar
+  .spacer:nth-of-type(1) {
+    margin-top: 0;
   }
 
   #search input[type=text] {
     width: 100%;
-  }
-
-  .spacer:nth-of-type(1) {
-    margin-top: 0;
   }
 
   .redditname {
