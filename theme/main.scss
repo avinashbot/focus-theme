@@ -1,4 +1,5 @@
 @import "variables";
+@import "aliases";
 @import "banner";
 @import "tab_menu";
 @import "submit_button";
@@ -94,22 +95,6 @@ body:not(.res) #header-bottom-right {
 }
 
 .sidebox.create {
-  display: none;
-}
-
-.subscribers .word {
-  display: none;
-}
-
-.subscribers::after {
-  content: "programmers, ";
-}
-
-.users-online {
-  display: inline;
-}
-
-.users-online::before {
   display: none;
 }
 

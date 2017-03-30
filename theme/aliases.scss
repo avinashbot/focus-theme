@@ -1,0 +1,23 @@
+.subscribers .word {
+  display: none;
+}
+
+.subscribers::after {
+  content: $readers-word;
+}
+
+.users-online {
+  display: inline;
+}
+
+.users-online::before {
+  display: none;
+}
+
+.users-online .number::before {
+  content: " (";
+}
+
+.users-online .word::after {
+  content: ")";
+}
