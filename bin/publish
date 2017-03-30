@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'dotenv'
+require 'redd'
+require 'sass'
+
+Dotenv.load
+
+css = Sass::Engine.for_file(File.join(__dir__, '../theme/main.scss'), {}).render
+subreddit = Redd.it(
+  user_agent: 'Redd:Theme Publisher:v0.1.0 (by /u/Mustermind)',
+  client_id: ENV.fetch('CLIENT_ID'),
+  secret: ENV.fetch('SECRET'),
+  username: ENV.fetch('USERNAME'),
+  password: ENV.fetch('PASSWORD')
+).subreddit(ENV.fetch('SUBREDDIT'))
+
+print 'Describe your changes: '
+subreddit.update_stylesheet(css, reason: gets.chomp)

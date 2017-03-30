@@ -1,0 +1,5 @@
+.sass-cache/
+*.css.map
+
+Gemfile.lock
+.env

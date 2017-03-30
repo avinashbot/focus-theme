@@ -1,0 +1,49 @@
+#header-bottom-left .tabmenu {
+  // Stick the tab menu to the bottom of the header.
+  position: absolute;
+  bottom: 2px; // for padding 2px on bottom of li
+  left: 0;
+  right: 0;
+  text-align: center;
+  overflow: hidden;
+
+  &:hover {
+    overflow: visible;
+  }
+
+  li {
+    margin: 0 2px 0 0;
+    padding: 0 0 2px 0;
+    text-align: center;
+    font-weight: normal;
+
+    &::after {
+      content: " " + $tab_menu-separator;
+      color: $tab_menu-separator-color;
+    }
+    &:last-of-type::after {
+      content: "";
+    }
+
+    a {
+      border: none;
+      padding: 0 0 2px 0;
+      background-color: transparent;
+
+      &:hover {
+        border-bottom: 2px solid #5f99cf;
+      }
+    }
+
+    &.selected {
+      a {
+        color: orangered;
+        &, &:hover {
+          border-bottom: 2px solid orangered;
+          border-bottom: 2px solid orangered;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+.footer-parent {
+  background-color: $footer-background-color;
+  padding: 30px;
+
+  .footer .title {
+    color: #777;
+  }
+
+  .footer a {
+    color: #e4e4e4;
+  }
+}
+
+#hsts_pixel {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.debuginfo {
+  background-color: $footer-background-color;
+}
