@@ -17,20 +17,16 @@ body, .side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
 }
 
 #header, body > .content {
-  width: 60%;
-  margin: 0 30% 0 10%;
+  width: $content-width;
+  margin: 0 $content-right-spacing 0 $content-left-spacing;
 }
 
-.sheets, #RESStyleSheetTipPane {
+.sheets, #RESStyleSheetTipPane, #sr-form .linefield {
   width: 100%;
 }
 
 .infobar {
   margin-right: 0;
-}
-
-#sr-form .linefield {
-  width: 100%;
 }
 
 body:not(.res) #header-bottom-right {

@@ -2,6 +2,7 @@ $page-top-margin: 20px;
 $page-background-color: #fcfcfc;
 $res-nightmode-color: #262626;
 
+$header-shortcuts-height: 18px;
 $header-shortcuts-opacity: 0.2;
 $header-background-color: #eeeeee;
 $header-height: 200px;
@@ -18,6 +19,11 @@ $banner-offset: 15px;
 $tab_menu-separator: "/";
 $tab_menu-separator-color: #cccccc;
 
+$content-width: 60%;
+$content-left-spacing: 10%;
+$content-right-spacing: 30%; // To make room for the sidebar.
+
+$sidebar-width: 300px;
 $sidebar-padding: 10px;
 $readers-word: "programmers";
 
