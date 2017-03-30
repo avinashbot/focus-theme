@@ -1,0 +1,20 @@
+#header-img {
+  position: absolute;
+  top: $snoo-offset;
+  left: -(($snoo-diameter / 2) + $snoo-gutter-size);
+  height: $snoo-diameter;
+  width: $snoo-diameter;
+  border: $snoo-gutter-size solid $page-background-color;
+  border-radius: $snoo-diameter;
+  z-index: 50;
+}
+
+#header-img:hover {
+  height: $snoo-diameter * $snoo-hover-size;
+  width: $snoo-diameter * $snoo-hover-size;
+  border-width: $snoo-gutter-size + (($snoo-diameter - ($snoo-diameter * $snoo-hover-size)) / 2);
+}
+
+.res-nightmode #header-img {
+  border-color: $page-background-color;
+}

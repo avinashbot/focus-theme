@@ -1,8 +1,9 @@
 @import "variables";
 @import "aliases";
 @import "banner";
-@import "tab_menu";
-@import "submit_button";
+@import "tab-menu";
+@import "submit-button";
+@import "snoo";
 @import "footer";
 
 body {
@@ -71,27 +72,6 @@ body:not(.res) #header-bottom-right {
 #header-bottom-left {
   position: relative;
   height: $header-height;
-}
-
-#header-img {
-  position: absolute;
-  top: 55px;
-  left: -30px;
-  height: 50px;
-  width: 50px;
-  border: 5px solid $page-background-color;
-  border-radius: 50px;
-  z-index: 50;
-}
-
-#header-img:hover {
-  height: 45px;
-  width: 45px;
-  border-width: 7.5px;
-}
-
-.res-nightmode #header-img {
-  border-color: #262626;
 }
 
 .sidebox.create {
