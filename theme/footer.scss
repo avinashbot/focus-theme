@@ -9,6 +9,15 @@
   .footer a {
     color: #e4e4e4;
   }
+
+  &::before {
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1em;
+    color: #cccccc;
+    content: $footer-attribution-text;
+  }
 }
 
 #hsts_pixel {
