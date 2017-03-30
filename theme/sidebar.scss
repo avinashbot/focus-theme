@@ -6,6 +6,13 @@
     padding-left: $sidebar-padding;
     width: 100%;
     max-width: $sidebar-width;
+
+    &:last-of-type::after {
+      display: block;
+      padding-top: 5px;
+      text-align: center;
+      content: "/r/focustheme by /u/Mustermind";
+    }
   }
 
   #search input[type=text] {
