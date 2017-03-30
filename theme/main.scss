@@ -1,13 +1,15 @@
 @import "variables";
 @import "aliases";
 @import "banner";
+@import "header-shortcuts";
 @import "tab-menu";
-@import "submit-button";
+@import "sidebar";
 @import "snoo";
+@import "submit-button";
 @import "footer";
 
 body {
-  margin-top: 20px;
+  margin-top: $page-top-margin;
 }
 
 body, .side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
@@ -35,33 +37,6 @@ body:not(.res) #header-bottom-right {
   top: 25px;
   bottom: auto;
   border-radius: 0;
-}
-
-.side {
-  width: 30%;
-  margin: -218px 0 0 0;
-}
-
-.side .spacer {
-  padding-left: 10px;
-  width: 100%;
-  max-width: 300px;
-}
-
-#search input[type=text] {
-  width: 100%;
-}
-
-.side .spacer:nth-of-type(1) {
-  margin-top: 0;
-}
-
-.side .redditname {
-  display: none;
-}
-
-#sr-header-area {
-  border: none;
 }
 
 #header {

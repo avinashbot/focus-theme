@@ -1,0 +1,22 @@
+.side {
+  width: 30%;
+  margin: -($header-height + 18px) 0 0 0;
+
+  .spacer {
+    padding-left: $sidebar-padding;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #search input[type=text] {
+    width: 100%;
+  }
+
+  .spacer:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .redditname {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+#sr-header-area {
+  border: none;
+  opacity: $header-shortcuts-opacity;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
