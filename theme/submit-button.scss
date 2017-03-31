@@ -1,4 +1,4 @@
-body.loggedin .side {
+body.loggedin:not(.comments-page) .side {
   .spacer:nth-of-type(2), .spacer:nth-of-type(3) {
     display: inline-block;
     margin-top: 0;
