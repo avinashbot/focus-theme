@@ -4,6 +4,7 @@
   left: -(($snoo-diameter / 2) + $snoo-gutter-size);
   height: $snoo-diameter;
   width: $snoo-diameter;
+  background-color: $page-background-color;
   border: $snoo-gutter-size solid $page-background-color;
   border-radius: $snoo-diameter;
   z-index: 50;

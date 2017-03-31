@@ -7,7 +7,7 @@ body.loggedin .side {
   }
 }
 
-body:not(.loggedin) .side {
+body:not(.loggedin) .side, body.comments-page .side {
   .spacer:nth-of-type(3), .spacer:nth-of-type(4) {
     display: inline-block;
     margin-top: 0;
