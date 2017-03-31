@@ -1,7 +1,7 @@
 <div align="center">
   <p>
     <!-- Redd -->
-    <img src="https://raw.githubusercontent.com/avinashbot/focus-theme/master/images/banner.png" width="500"><br>
+    <img src="images/banner.png" width="500"><br>
   </p>
 </div>
 
