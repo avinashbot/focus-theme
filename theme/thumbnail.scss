@@ -1,0 +1,13 @@
+.thumbnail {
+  width: 50px;
+  border-radius: 70px;
+
+  &.default, &.self {
+    background-position-x: -10px; // spritesheets, eh?
+  }
+
+  img {
+    height: 50px;
+    width: auto;
+  }
+}
