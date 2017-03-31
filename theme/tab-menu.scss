@@ -31,6 +31,11 @@
       border: none;
       padding: 0 0 2px 0;
       background-color: transparent;
+      color: $tab_menu-text-color;
+
+      .res-nightmode {
+        color: $tab_menu-text-color;
+      }
 
       &:hover {
         border-bottom: 2px solid #5f99cf;
