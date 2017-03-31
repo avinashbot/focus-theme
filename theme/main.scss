@@ -38,6 +38,7 @@ body:not(.res) #header-bottom-right {
 
 #header {
   background-color: $header-background-color;
+  background-image: $header-background-url;
   border: none;
 }
 

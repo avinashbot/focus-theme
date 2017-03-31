@@ -11,7 +11,7 @@
 
 .pagename a::after {
   content: "";
-  background: url(%%banner%%) 100% no-repeat;
+  background: $banner-image-url 100% no-repeat;
   background-size: 100%;
   display: inline-block;
   width: $banner-width;
