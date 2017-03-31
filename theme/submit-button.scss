@@ -7,8 +7,17 @@ body.loggedin:not(.comments-page) .side {
   }
 }
 
-body:not(.loggedin) .side, body.comments-page .side {
+body:not(.loggedin):not(.comments-page) .side, body.loggedin.comments-page .side {
   .spacer:nth-of-type(3), .spacer:nth-of-type(4) {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 145px;
+  }
+}
+
+body.comments-page:not(.loggedin) .side {
+  .spacer:nth-of-type(4), .spacer:nth-of-type(5) {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 10px;
