@@ -1,24 +1,147 @@
 #header-bottom-right {
-  width: 100%;
+  top: 7px !important;
+  left: 100%;
+  width: $sidebar-width;
+  height: $userbar-height;
+
+  margin-left: $sidebar-padding;
+  padding: 0;
   background-color: transparent;
   text-align: center;
+  font-size: 0;
 
-  .beta-hint {
-    right: 10px;
+  #userbarToggle {
+    border-right: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 0;
+    line-height: $userbar-height;
+    min-height: auto;
+
+    &::after {
+      font-size: x-small;
+      content: "show userbar";
+    }
+
+    &.userbarHide {
+      display: none;
+    }
+
+    &.userbarShow {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .separator {
+    font-size: 0;
+    padding-right: 10px;
+  }
+
+  .user {
+    margin-left: 0 !important;
+
+    a[href^="https://www.reddit.com/user/"] {
+      display: inline-block;
+      top: 0;
+      background-image: url(%%icon-acct%%);
+      background-position: 0 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      vertical-align: top;
+      width: 25px;
+      height: 20px;
+    }
+
+    #RESAccountSwitcherIcon {
+      margin-left: 10px !important;
+
+      display: inline-block;
+      top: 0;
+      background-image: url(%%icon-acct-switcher%%);
+      background-position: 0 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      vertical-align: top;
+      width: 25px;
+      height: 20px;
+    }
+  }
+
+  #mail {
+    display: inline-block;
+    top: 0;
+    background-image: url(%%icon-mail%%);
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
+  }
+
+  #modmail {
+    display: inline-block;
+    top: 0;
+    background-image: url(%%icon-modmail%%);
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
+  }
+
+  #new_modmail {
+    display: inline-block;
+    top: 0;
+    background-image: url(%%icon-new-modmail%%);
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
+  }
+
+  .pref-lang {
+    display: inline-block;
+    top: 0;
+    background-image: url(%%icon-prefs%%);
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
+  }
+
+  #RESSettingsButton {
+    display: inline-block;
+    top: 0;
+    background-image: url(%%icon-res-prefs%%);
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
+  }
+
+  .logout {
+    display: inline-block;
+    top: 0;
+    background-image: url(%%icon-logout%%);
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
   }
 }
 
-#userbarToggle {
-  left: initial !important;
-  right: 0 !important;
-  border-radius: 0;
-  padding: 0;
-  height: 15px;
-  background-color: #3d9970;
-  color: #ffffff;
-  text-align: center;
-
-  &:hover {
-    background-color: lighten(#3d9970, 10%);
-  }
+#RESAccountSwitcherIconOverlay {
+  top: -9999px !important;
+  left: -9999px !important;
 }
