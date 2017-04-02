@@ -3,6 +3,12 @@
   min-width: $sidebar-width + $sidebar-padding;
   margin: -($header-height + $header-shortcuts-height) 0 0 0;
 
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 1;
+  }
+
   .spacer {
     margin: 0 0 10px $sidebar-padding;
     width: $sidebar-width;
@@ -24,5 +30,9 @@
     &::before {
       content: "/r/";
     }
+  }
+
+  .sidebox.create {
+    display: none;
   }
 }
