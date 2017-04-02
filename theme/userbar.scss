@@ -1,7 +1,7 @@
 #header-bottom-right {
-  top: 7px !important;
-  left: 100%;
-  width: $sidebar-width;
+  top: $header-shortcuts-height + 5px !important;
+  left: 0;
+  right: 0;
   height: $userbar-height;
 
   margin-left: $sidebar-padding;
@@ -139,6 +139,14 @@
     width: 25px;
     height: 20px;
   }
+}
+
+.res-nightmode #header-bottom-right {
+  background-color: transparent;
+}
+
+#userbarToggle {
+  color: #001f3f;
 }
 
 #RESAccountSwitcherIconOverlay {

@@ -12,7 +12,14 @@ require 'sass'
 
 Dotenv.load
 
-css = Sass::Engine.for_file(File.join(__dir__, '../theme/main.scss'), {}).render
+begin
+  css_path = File.join(__dir__, '../theme/main.scss')
+  css = Sass::Engine.for_file(css_path, {}).render
+rescue Sass::SyntaxError => e
+  puts e.message
+  exit 1
+end
+
 subreddit = Redd.it(
   user_agent: 'Redd:Theme Publisher:v0.1.0 (by /u/Mustermind)',
   client_id: ENV.fetch('CLIENT_ID'),
