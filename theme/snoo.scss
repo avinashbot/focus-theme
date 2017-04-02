@@ -8,14 +8,15 @@
   border: $snoo-gutter-size solid $page-background-color;
   border-radius: $snoo-diameter;
   z-index: 50;
-}
 
-#header-img:hover {
-  height: $snoo-diameter * $snoo-hover-size;
-  width: $snoo-diameter * $snoo-hover-size;
-  border-width: $snoo-gutter-size + (($snoo-diameter - ($snoo-diameter * $snoo-hover-size)) / 2);
-}
+  body.res-nightmode & {
+    border-color: $res-nightmode-color;
+    background-color: $res-nightmode-color;
+  }
 
-.res-nightmode #header-img {
-  border-color: $res-nightmode-color;
+  &:hover {
+    height: $snoo-diameter * $snoo-hover-size;
+    width: $snoo-diameter * $snoo-hover-size;
+    border-width: $snoo-gutter-size + (($snoo-diameter - ($snoo-diameter * $snoo-hover-size)) / 2);
+  }
 }

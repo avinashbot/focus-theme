@@ -48,7 +48,7 @@ body:not(.res) #header-bottom-right {
   height: $header-height;
 }
 
-#siteTable {
+body.listing-page #siteTable {
   min-height: 50vh;
 }
 

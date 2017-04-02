@@ -7,12 +7,12 @@
 
   text-align: center;
   font-size: 0;
-}
 
-.pagename a::after {
-  content: "";
-  background: $banner-image-url no-repeat center;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+  a::after {
+    content: "";
+    background: $banner-image-url no-repeat center;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
 }
