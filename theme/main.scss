@@ -52,8 +52,12 @@ body:not(.res) #header-bottom-right {
   display: none;
 }
 
-.link {
-  margin: 10px;
+.entry {
+  padding: 5px;
+}
+
+.rank {
+  display: none;
 }
 
 .link:not(.linkflair) .flairselectbtn {
