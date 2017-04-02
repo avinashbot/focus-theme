@@ -60,6 +60,13 @@ body:not(.res) #header-bottom-right {
   display: none;
 }
 
+.flair {
+  background-color: #ddd;
+  color: #555;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
 .link:not(.linkflair) .flairselectbtn {
   background-color: #FF4136;
   color: #fff;
