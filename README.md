@@ -4,8 +4,9 @@
 
 #### Installation
 
-- Copy all the images to your subreddit, preserving the original file names.
-- Compile the SCSS using your tool of choice (`sass theme/main.scss`)
+- Copy all the images from `images` to your subreddit, preserving the original file names.
+- Set a square or circular header image in your subreddit settings.
+- Compile the SCSS using your tool of choice (`sass theme/main.scss`).
 - Copy and paste the CSS to your subreddit.
 - Alternatively, there's a script in ./bin/publish that you might find interesting.
 
