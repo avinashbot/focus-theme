@@ -38,106 +38,59 @@
     padding-right: 10px;
   }
 
+  a[href^="https://www.reddit.com/user/"],
+  #RESAccountSwitcherIcon,
+  #mail,
+  #modmail,
+  #new_modmail,
+  .pref-lang,
+  #RESSettingsButton,
+  .logout {
+    display: inline-block;
+    top: 0;
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    width: 25px;
+    height: 20px;
+  }
+
   .user {
     margin-left: 0 !important;
 
     a[href^="https://www.reddit.com/user/"] {
-      display: inline-block;
-      top: 0;
       background-image: url(%%icon-acct%%);
-      background-position: 0 0;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      vertical-align: top;
-      width: 25px;
-      height: 20px;
     }
 
     #RESAccountSwitcherIcon {
       margin-left: 10px !important;
-
-      display: inline-block;
-      top: 0;
       background-image: url(%%icon-acct-switcher%%);
-      background-position: 0 0;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      vertical-align: top;
-      width: 25px;
-      height: 20px;
     }
   }
 
   #mail {
-    display: inline-block;
-    top: 0;
     background-image: url(%%icon-mail%%);
-    background-position: 0 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    width: 25px;
-    height: 20px;
   }
 
   #modmail {
-    display: inline-block;
-    top: 0;
     background-image: url(%%icon-modmail%%);
-    background-position: 0 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    width: 25px;
-    height: 20px;
   }
 
   #new_modmail {
-    display: inline-block;
-    top: 0;
     background-image: url(%%icon-new-modmail%%);
-    background-position: 0 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    width: 25px;
-    height: 20px;
   }
 
   .pref-lang {
-    display: inline-block;
-    top: 0;
     background-image: url(%%icon-prefs%%);
-    background-position: 0 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    width: 25px;
-    height: 20px;
   }
 
   #RESSettingsButton {
-    display: inline-block;
-    top: 0;
     background-image: url(%%icon-res-prefs%%);
-    background-position: 0 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    width: 25px;
-    height: 20px;
   }
 
   .logout {
-    display: inline-block;
-    top: 0;
     background-image: url(%%icon-logout%%);
-    background-position: 0 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    vertical-align: top;
-    width: 25px;
-    height: 20px;
   }
 }
 
