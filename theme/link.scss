@@ -1,0 +1,39 @@
+body.listing-page #siteTable {
+  margin-top: 15px;
+  min-height: 50vh;
+}
+
+.link {
+  margin: 0;
+  margin-bottom: 15px;
+
+  .rank {
+    display: none;
+  }
+
+  .midcol, .thumbnail {
+    margin: 10px 0;
+  }
+
+  .entry {
+    padding: 10px;
+    border-right: 3px solid transparent;
+
+    &.RES-keyNav-activeElement {
+      border-right: 3px solid $link-accent-color;
+
+      &, .md-container {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .usertext-body .md {
+    border-color: #c6daef;
+    border-radius: 2px;
+  }
+}
