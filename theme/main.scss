@@ -51,11 +51,13 @@ body:not(.res) #header-bottom-right {
 }
 
 body.listing-page #siteTable {
+  margin-top: 10px;
   min-height: 50vh;
 }
 
 .link {
-  margin: 10px 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .rank {
