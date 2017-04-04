@@ -1,5 +1,9 @@
 .fancy-toggle-button .option, .res-fancy-toggle-button, span.multi-count {
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
   padding: 3px 6px;
+}
+
+span.multi-count {
+  margin: 0;
 }
