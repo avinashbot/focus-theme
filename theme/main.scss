@@ -51,15 +51,29 @@ body:not(.res) #header-bottom-right {
 }
 
 body.listing-page #siteTable {
-  margin-top: 10px;
+  margin-top: 5px;
   min-height: 50vh;
 }
 
 .link {
   margin: 0;
-  margin-bottom: 10px;
-}
+  margin-bottom: 5px;
 
-.rank {
-  display: none;
+  .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+    // Let's hope this important overrides RES's important.
+    background-color: transparent !important;
+    border-right: 3px solid $link-accent-color;
+  }
+
+  .rank {
+    display: none;
+  }
+
+  .midcol, .thumbnail {
+    margin: 10px 0;
+  }
+
+  .entry {
+    padding: 10px;
+  }
 }
