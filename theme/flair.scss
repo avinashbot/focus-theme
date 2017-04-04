@@ -1,0 +1,17 @@
+.flair, .linkflairlabel {
+  background-color: #ddd;
+  color: #555;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.link:not(.linkflair) .flairselectbtn {
+  background-color: #FF4136;
+  color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.link:not(.linkflair) .flairselectbtn::after {
+  content: " (please add one!)"
+}
