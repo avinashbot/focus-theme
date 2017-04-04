@@ -59,14 +59,6 @@ body.listing-page #siteTable {
   margin: 0;
   margin-bottom: 5px;
 
-  .RES-keyNav-activeElement {
-    border-right: 3px solid $link-accent-color;
-
-    &, .md-container {
-      background-color: transparent !important;
-    }
-  }
-
   .rank {
     display: none;
   }
@@ -77,5 +69,23 @@ body.listing-page #siteTable {
 
   .entry {
     padding: 10px;
+    border-right: 3px solid transparent;
+
+    &.RES-keyNav-activeElement {
+      border-right: 3px solid $link-accent-color;
+
+      &, .md-container {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .usertext-body .md {
+    border-color: #c6daef;
+    border-radius: 2px;
   }
 }
