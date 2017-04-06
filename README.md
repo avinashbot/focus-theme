@@ -2,6 +2,8 @@
 
 ### focus – theme for reddit (beta)
 
+[**Subreddit / Demo**](https://www.reddit.com/r/focustheme)
+
 #### Installation
 
 - Copy all the images from `images` to your subreddit, preserving the original file names.
