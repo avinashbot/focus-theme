@@ -32,10 +32,6 @@
 
   .redditname {
     margin-bottom: 0;
-
-    &::before {
-      content: "/r/";
-    }
   }
 
   .sidebox.create {
