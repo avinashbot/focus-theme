@@ -21,9 +21,12 @@ body, .side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
   background-color: $page-background-color;
 }
 
-#header, body > .content {
+#header,
+body > .content,
+body.with-listing-chooser.listing-chooser-collapsed > .content,
+body.with-listing-chooser.listing-chooser-collapsed .footer-parent {
   width: $content-width;
-  margin: 0 $content-right-spacing 0 $content-left-spacing;
+  margin: 10px $content-right-spacing 0 $content-left-spacing;
 }
 
 .commentarea {

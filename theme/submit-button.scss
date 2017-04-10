@@ -1,47 +1,8 @@
-body.loggedin:not(.comments-page):not(.submit-page) .side {
-  .spacer:nth-of-type(2), .spacer:nth-of-type(3) {
-    display: inline-block;
-    margin: 0;
-    width: 50%;
-    max-width: ($sidebar-width / 2) + ($sidebar-padding / 2);
-
-    .submit {
-      margin: 0 0 10px $sidebar-padding;
-    }
-  }
-}
-
-body:not(.loggedin):not(.comments-page):not(.submit-page) .side, body.loggedin.comments-page .side {
-  .spacer:nth-of-type(3), .spacer:nth-of-type(4) {
-    display: inline-block;
-    margin: 0;
-    width: 50%;
-    max-width: ($sidebar-width / 2) + ($sidebar-padding / 2);
-
-    .submit {
-      margin: 0 0 10px $sidebar-padding;
-    }
-  }
-}
-
-body.comments-page:not(.loggedin) .side {
-  .spacer:nth-of-type(4), .spacer:nth-of-type(5) {
-    display: inline-block;
-    margin: 0;
-    width: 50%;
-    max-width: ($sidebar-width / 2) + ($sidebar-padding / 2);
-
-    .submit {
-      margin: 0 0 10px $sidebar-padding;
-    }
-  }
-}
-
 .side .morelink {
-  border: 1px solid #3D9970;
+  border: 1px dashed #3D9970;
   border-radius: 0;
   background-image: none;
-  background-color: #3D9970;
+  background-color: transparent;
 
   height: 30px;
   line-height: 30px;
@@ -50,12 +11,11 @@ body.comments-page:not(.loggedin) .side {
 
   &:hover {
     background-image: none;
-    border-color: lighten(#3D9970, 20%);
-    background-color: lighten(#3D9970, 20%);
+    border-style: solid;
   }
 
   a {
-    color: white;
+    color: #3D9970;
   }
 
   .nub {

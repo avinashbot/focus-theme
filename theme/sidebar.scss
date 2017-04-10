@@ -1,6 +1,5 @@
 .side {
   width: $content-right-spacing;
-  // min-width: $sidebar-width + $sidebar-padding;
   margin: -($header-height + $header-shortcuts-height) 0 0 0;
 
   opacity: 0.5;
@@ -10,7 +9,7 @@
   }
 
   .spacer {
-    margin: 0 0 10px $sidebar-padding;
+    margin: 10px 0 0 $sidebar-padding;
     width: 100%;
     max-width: $sidebar-width;
   }
@@ -23,6 +22,12 @@
   #search input[type=text] {
     border: 0;
     width: 100%;
+    background-color: transparent;
+    border-bottom: 1px dashed #3D9970;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .redditname {
@@ -39,5 +44,9 @@
 
   .sidecontentbox .content {
     border-color: #dddddd;
+  }
+
+  .titlebox {
+    clear: both;
   }
 }
