@@ -2,7 +2,7 @@
   width: 50px;
   border-radius: 70px;
 
-  &.default, &.self {
+  &.default, &.self, &.image {
     background-position-x: -10px; // spritesheets, eh?
   }
 
