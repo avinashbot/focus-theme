@@ -5,7 +5,16 @@ body.listing-page #siteTable {
 
 .link {
   margin: 0;
-  margin-bottom: 15px;
+  padding: 7.5px 0;
+  border-right: 2px solid transparent;
+
+  &.RES-keyNav-activeThing {
+    border-right: 2px solid $link-accent-color;
+  }
+
+  &:not(.RES-keyNav-activeThing):hover {
+    border-right: 2px solid transparentize($link-accent-color, 0.5);
+  }
 
   .rank {
     display: none;
@@ -17,10 +26,10 @@ body.listing-page #siteTable {
 
   .entry {
     padding: 5px;
-    border-right: 3px solid transparent;
+    border-right: 0;
 
     &.RES-keyNav-activeElement {
-      border-right: 3px solid $link-accent-color;
+      border-right: 0;
 
       &, .md-container {
         background-color: transparent !important;
