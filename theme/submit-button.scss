@@ -3,7 +3,7 @@ body.loggedin:not(.comments-page):not(.submit-page) .side {
     display: inline-block;
     margin: 0;
     width: 50%;
-    max-width: $sidebar-width / 2;
+    max-width: ($sidebar-width / 2) + ($sidebar-padding / 2);
 
     .submit {
       margin: 0 0 10px $sidebar-padding;
@@ -16,7 +16,7 @@ body:not(.loggedin):not(.comments-page):not(.submit-page) .side, body.loggedin.c
     display: inline-block;
     margin: 0;
     width: 50%;
-    max-width: $sidebar-width / 2;
+    max-width: ($sidebar-width / 2) + ($sidebar-padding / 2);
 
     .submit {
       margin: 0 0 10px $sidebar-padding;
@@ -29,7 +29,7 @@ body.comments-page:not(.loggedin) .side {
     display: inline-block;
     margin: 0;
     width: 50%;
-    max-width: $sidebar-width / 2;
+    max-width: ($sidebar-width / 2) + ($sidebar-padding / 2);
 
     .submit {
       margin: 0 0 10px $sidebar-padding;
