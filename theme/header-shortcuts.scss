@@ -3,6 +3,7 @@
   opacity: $header-shortcuts-opacity;
   transition: opacity 0.2s;
   height: $header-shortcuts-height;
+  background-color: transparent;
 
   &:hover {
     opacity: 1;

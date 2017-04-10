@@ -26,6 +26,17 @@ body, .side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
   margin: 0 $content-right-spacing 0 $content-left-spacing;
 }
 
+.commentarea {
+  .panestack-title, .menuarea {
+    margin-right: 0;
+  }
+
+  .usertext-edit, .markdownEditor-wrapper, .md textarea {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 .sheets, #RESStyleSheetTipPane, #sr-form .linefield {
   width: 100%;
 }
