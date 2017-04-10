@@ -1,9 +1,9 @@
 .pagename {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: $snoo-diameter / 2;
+  right: $snoo-diameter / 2; // keep banner centered
+  top: $userbar-height;
+  bottom: $tab-menu-height;
 
   text-align: center;
   font-size: 0;
