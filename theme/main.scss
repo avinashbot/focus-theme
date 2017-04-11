@@ -24,10 +24,19 @@ body, .side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
 #header,
 body > .content,
 body.with-listing-chooser.listing-chooser-collapsed > .content,
-body.with-listing-chooser.listing-chooser-collapsed .footer-parent,
 body.modtools-page > .content {
   width: $content-width;
   margin: 10px $content-right-spacing 0 $content-left-spacing;
+}
+
+body.with-listing-chooser .listing-chooser {
+  z-index: 100;
+  top: -$page-top-margin;
+  background-color: #eaeaea;
+
+  .grippy {
+    background-color: $page-background-color;
+  }
 }
 
 .commentarea {
