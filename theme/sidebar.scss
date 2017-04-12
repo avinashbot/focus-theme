@@ -23,7 +23,7 @@
     border: 0;
     width: 100%;
     background-color: transparent;
-    border-bottom: 1px dashed #3D9970;
+    border-bottom: 1px dashed $accent-color;
 
     &:focus {
       outline: none;

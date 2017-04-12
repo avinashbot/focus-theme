@@ -9,7 +9,7 @@
   border-radius: $snoo-diameter;
   z-index: 50;
 
-  body.res-nightmode & {
+  .res-nightmode & {
     border-color: $res-nightmode-color;
     background-color: $res-nightmode-color;
   }
@@ -18,5 +18,19 @@
     height: $snoo-diameter * $snoo-hover-size;
     width: $snoo-diameter * $snoo-hover-size;
     border-width: $snoo-gutter-size + (($snoo-diameter - ($snoo-diameter * $snoo-hover-size)) / 2);
+  }
+
+  &.default-header {
+    width: $snoo-diameter;
+    height: $snoo-diameter;
+    text-indent: 0;
+    background-image: none;
+    background-color: $accent-color;
+    font-size: 0;
+
+    &:hover {
+      height: $snoo-diameter * $snoo-hover-size;
+      width: $snoo-diameter * $snoo-hover-size;
+    }
   }
 }
