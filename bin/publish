@@ -15,6 +15,11 @@ Dotenv.load
 begin
   css_path = File.join(__dir__, '../theme/main.scss')
   css = Sass::Engine.for_file(css_path, {}).render
+
+  # Yay sloppy theming
+  if ENV['SUBREDDIT'].casecmp('focustheme').zero?
+    css.sub!('programmers', 'themers')
+  end
 rescue Sass::SyntaxError => e
   puts e.message
   exit 1
