@@ -21,7 +21,16 @@
   }
 }
 
-@each $flair, $color in (red: #ff4136, green: #3D9970, blue: #0f64c8, orange: #ff851b) {
+@each $flair, $color in (
+  red: #ff4136,
+  green: #3D9970,
+  blue: #0f64c8,
+  orange: #ff851b,
+  purple: #B10DC9,
+  yellow: #EFCE00,
+  black: #111111,
+  brown: #954535
+) {
   .flair-#{"" + $flair} { background-color: $color; }
   .linkflair-#{"" + $flair} .linkflairlabel { background-color: $color; }
 }

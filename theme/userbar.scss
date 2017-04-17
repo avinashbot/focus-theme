@@ -57,7 +57,7 @@
     background-repeat: no-repeat;
     vertical-align: top;
     width: 25px;
-    height: 20px;
+    height: 18px;
   }
 
   .user {
@@ -75,6 +75,7 @@
 
   #mail {
     background-image: url(%%icon-mail%%);
+    &.havemail { background-color: orange; }
   }
 
   #modmail {
