@@ -2,8 +2,8 @@
 $page-top-margin: 20px;
 $page-background-color: #f6f6f6;
 $page-nightmode-color: #262626;
-$page-accent-color: #3D9970;
-$page-element-transparency: 0.35;
+$page-accent-color: #3D9970 !default;
+$page-element-transparency: 0.45;
 
 // Shortcut Bar (Top of Header)
 $header-shortcuts-height: 18px;
@@ -37,6 +37,10 @@ $tab-menu-height: 18px;
 $content-width: 60%;
 $content-left-spacing: 10%;
 $content-right-spacing: 30%; // To make room for the sidebar.
+
+// Listing Page Entries
+$link-color: #0074D9;
+$link-visited-color: #85144b;
 
 // Sidebar
 $sidebar-width: 300px;

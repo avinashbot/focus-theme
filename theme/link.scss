@@ -38,10 +38,10 @@ body.listing-page #siteTable {
   }
 
   .title {
-    color: #0074D9;
+    color: $link-color;
 
     &:visited {
-      color: #85144b;
+      color: $link-visited-color;
     }
   }
 

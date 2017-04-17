@@ -15,6 +15,7 @@ Dotenv.load
 options = {}
 if ENV['SUBREDDIT'].casecmp('redd').zero?
   options['readers-word'] = '"programmers"'
+  options['page-accent-color'] = '#B10DC9'
 end
 path = File.join(__dir__, '../theme/main.scss')
 scss = File.read(path)
