@@ -49,7 +49,7 @@
   #new_modmail,
   .pref-lang,
   #RESSettingsButton,
-  .logout {
+  .logout a {
     display: inline-block;
     top: 0;
     background-position: 0 0;
@@ -93,7 +93,7 @@
     background-image: url(%%icon-res-prefs%%);
   }
 
-  .logout {
+  .logout a {
     background-image: url(%%icon-logout%%);
   }
 }
