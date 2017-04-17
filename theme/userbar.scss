@@ -75,7 +75,6 @@
 
   #mail {
     background-image: url(%%icon-mail%%);
-    &.havemail { background-color: orange; }
   }
 
   #modmail {
@@ -84,6 +83,12 @@
 
   #new_modmail {
     background-image: url(%%icon-new-modmail%%);
+  }
+
+  #mail, #modmail, #new_modmail {
+    &.havemail {
+      border-bottom: 3px solid #FFA500;
+    }
   }
 
   .pref-lang {
