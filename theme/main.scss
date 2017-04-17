@@ -26,7 +26,7 @@ body > .content,
 body.with-listing-chooser.listing-chooser-collapsed > .content,
 body.modtools-page > .content {
   width: $content-width;
-  margin: 10px $content-right-spacing 0 $content-left-spacing;
+  margin: 10px $content-right-spacing 10px $content-left-spacing;
 }
 
 body.with-listing-chooser .listing-chooser {
