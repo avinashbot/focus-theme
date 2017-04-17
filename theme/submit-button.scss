@@ -1,5 +1,5 @@
 .side .morelink {
-  border: 1px dashed $accent-color;
+  border: 1px dashed $page-accent-color;
   border-radius: 0;
   background-image: none;
   background-color: transparent;
@@ -15,7 +15,7 @@
   }
 
   a {
-    color: $accent-color;
+    color: $page-accent-color;
   }
 
   .nub {

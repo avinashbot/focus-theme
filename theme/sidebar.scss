@@ -23,7 +23,7 @@
     border: 0;
     width: 100%;
     background-color: transparent;
-    border-bottom: 1px dashed $accent-color;
+    border-bottom: 1px dashed $page-accent-color;
 
     &:focus {
       outline: none;
@@ -31,7 +31,7 @@
   }
 
   .linkinfo {
-    border: 1px dashed #5f99cf;
+    border: 1px dashed $page-accent-color;
     background-color: transparent;
   }
 

@@ -1,38 +1,49 @@
+// Whole-page Variables
 $page-top-margin: 20px;
 $page-background-color: #f6f6f6;
-$res-nightmode-color: #262626;
+$page-nightmode-color: #262626;
+$page-accent-color: purple; // #3D9970;
 
+// Shortcut Bar (Top of Header)
 $header-shortcuts-height: 18px;
 $header-shortcuts-opacity: 0.2;
+
+// User-Specific Links
+$userbar-height: 20px;
+
+// Focus's Large Header
 $header-background-color: #eeeeee;
 $header-background-url: url(%%header-background%%);
 $header-height: 200px;
 
+// Round Return-to-Reddit Button
+$snoo-default-color: $page-accent-color;
 $snoo-diameter: 50px;
 $snoo-gutter-size: 5px;
 $snoo-offset: 65px;
 $snoo-hover-size: 0.9;
 
+// Subreddit Logo
 $banner-image-url: url(%%banner%%);
 
+// Subreddit Links (Bottom of Header)
 $tab-menu-separator: "/";
 $tab-menu-text-color: #42668a;
 $tab-menu-separator-color: #cccccc;
 $tab-menu-height: 18px;
 
-$userbar-height: 20px;
-
+// Main Page Contents
 $content-width: 60%;
 $content-left-spacing: 10%;
 $content-right-spacing: 30%; // To make room for the sidebar.
 
-$accent-color: #3D9970;
-
+// Sidebar
 $sidebar-width: 300px;
 $sidebar-padding: 10px;
 $readers-word: "programmers";
 $users-online-word: "";
 
+// Page Footer
 $footer-background-color: #111111;
 $footer-title-color:      #777777;
 $footer-link-color:       #e4e4e4;

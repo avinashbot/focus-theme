@@ -9,11 +9,11 @@ body.listing-page #siteTable {
   border-right: 2px solid transparent;
 
   &.RES-keyNav-activeThing {
-    border-right: 2px solid $accent-color;
+    border-right: 2px solid $page-accent-color;
   }
 
   body.res &:not(.RES-keyNav-activeThing):hover {
-    border-right: 2px solid transparentize($accent-color, 0.5);
+    border-right: 2px solid transparentize($page-accent-color, 0.5);
   }
 
   .rank {
