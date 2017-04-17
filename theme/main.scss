@@ -58,13 +58,54 @@ body.with-listing-chooser .listing-chooser {
   }
 }
 
-.sheets, #RESStyleSheetTipPane, #sr-form .linefield {
+.sheets,
+#RESStyleSheetTipPane,
+#sr-form .linefield,
+#newlink .formtabs-content,
+#newlink .roundfield,
+#newlink .roundfield .usertext-edit,
+#newlink .markdownEditor-wrapper {
   width: 100%;
-  padding: 0;
+  max-width: 100%;
 }
 
-.infobar {
+#sr-form .linefield,
+#newlink .formtabs-content,
+#newlink .roundfield {
+  padding: 0;
+  background-color: transparent;
+}
+
+.roundfield textarea,
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield input[type=password],
+.roundfield input[type=number],
+#compose-message .roundfield select {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 1px dashed $page-accent-color;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#link-desc, #text-desc {
+  margin-top: 10px;
+}
+
+.submit_text.enabled {
+  display: block;
+}
+
+.infobar, .formtabs-content .infobar, #newlink .roundfield.info-notice {
   margin-right: 0;
+  border: 1px dotted $page-accent-color;
+  background-color: transparent;
+  padding: 10px;
 }
 
 body:not(.res) #header-bottom-right {
