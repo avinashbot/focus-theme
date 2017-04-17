@@ -12,14 +12,16 @@ require 'sass'
 
 Dotenv.load
 
-begin
-  css_path = File.join(__dir__, '../theme/main.scss')
-  css = Sass::Engine.for_file(css_path, {}).render
+options = {}
+if ENV['SUBREDDIT'].casecmp('redd').zero?
+  options['readers-word'] = '"programmers"'
+end
+path = File.join(__dir__, '../theme/main.scss')
+scss = File.read(path)
+options.each { |option, value| scss.prepend("$#{option}: #{value};\n") }
 
-  # Yay sloppy theming
-  if ENV['SUBREDDIT'].casecmp('focustheme').zero?
-    css.sub!('programmers', 'themers')
-  end
+begin
+  parsed = Sass::Engine.new(scss, syntax: :scss, filename: path).render
 rescue Sass::SyntaxError => e
   puts e.message
   exit 1
@@ -33,4 +35,4 @@ subreddit = Redd.it(
   password: ENV.fetch('PASSWORD')
 ).subreddit(ENV.fetch('SUBREDDIT'))
 
-subreddit.update_stylesheet(css, reason: reason)
+subreddit.update_stylesheet(parsed, reason: reason)

@@ -40,7 +40,7 @@ $content-right-spacing: 30%; // To make room for the sidebar.
 // Sidebar
 $sidebar-width: 300px;
 $sidebar-padding: 10px;
-$readers-word: "programmers";
+$readers-word: "themers" !default; // see ./bin/publish
 $users-online-word: "";
 
 // Page Footer
