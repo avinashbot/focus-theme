@@ -45,6 +45,14 @@ body.listing-page #siteTable {
     }
   }
 
+  .tagline, .flat-list a {
+    opacity: 0.5;
+  }
+
+  .flat-list a.comments {
+    opacity: 1;
+  }
+
   .usertext-body .md {
     border-color: #c6daef;
     border-radius: 2px;

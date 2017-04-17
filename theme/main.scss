@@ -17,8 +17,12 @@ body {
   margin-top: $page-top-margin;
 }
 
-body, .side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
+body {
   background-color: $page-background-color;
+}
+
+.side, .titlebox form.toggle, .leavemoderator, .icon-menu a {
+  background-color: transparent;
 }
 
 #header,
