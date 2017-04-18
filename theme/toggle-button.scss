@@ -1,9 +1,20 @@
-.fancy-toggle-button .option, .res-fancy-toggle-button, span.multi-count {
+.fancy-toggle-button .option,
+.res-fancy-toggle-button,
+.res-fancy-toggle-button.active,
+span.multi-count,
+span.multi-count.active {
   border: none;
-  border-radius: 2px;
   padding: 3px 6px;
-}
+  line-height: normal;
 
-span.multi-count {
-  margin: 0;
+  background-image: none;
+  background-color: transparent;
+  color: #3D9970;
+  border-bottom: 1px dashed #3D9970;
+  &.remove {
+    background-image: none;
+    background-color: transparent;
+    color: #ff4136;
+    border-bottom: 1px dashed #ff4136;
+  }
 }

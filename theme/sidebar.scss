@@ -30,7 +30,12 @@
   }
 
   .redditname {
+    font-weight: normal;
     margin-bottom: 0;
+
+    a {
+      color: darken($page-accent-color, 20%);
+    }
   }
 
   .sidebox.create {
@@ -43,5 +48,28 @@
 
   .titlebox {
     clear: both;
+  }
+
+  .usertext-body {
+    padding-top: 5px;
+  }
+
+  .usertext-body a[href*="focus-button"] {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $page-accent-color;
+    border: 1px dashed $page-accent-color;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+
+    &:hover {
+      border-style: solid;
+    }
+  }
+
+  .account-activity-box {
+    margin-bottom: 10px;
   }
 }
