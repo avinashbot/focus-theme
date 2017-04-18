@@ -6,7 +6,7 @@
 
 #### Features
 
-- Customizable subreddit logo.
+- Customizable subreddit logo and header background.
 - Subtle round "back to reddit" button.
 - Compatible with RES and RES Night Mode.
 - Aliases for "subscribers" and "users" in sidebar.
