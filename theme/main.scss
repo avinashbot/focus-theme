@@ -41,6 +41,12 @@ body.with-listing-chooser .listing-chooser {
   }
 }
 
+.trending-subreddits {
+  .rank-spacer, .midcol-spacer {
+    width: 0;
+  }
+}
+
 .wiki-page .wiki-page-content {
   margin: 0;
 }
