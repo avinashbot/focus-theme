@@ -4,13 +4,24 @@
 
 [**Subreddit / Demo**](https://www.reddit.com/r/focustheme)
 
+#### Features
+
+- Customizable subreddit logo.
+- Subtle round "back to reddit" button.
+- Compatible with RES and RES Night Mode.
+- Aliases for "subscribers" and "users" in sidebar.
+- Multicolor user and link flairs.
+- Large buttons in sidebar text.
+- Circular fixed-size thumbnail images.
+- Also works as a gold theme for all subreddits.
+
 #### Installation
 
-- Copy all the images from `images` to your subreddit, preserving the original file names.
-- Set a square or circular header image in your subreddit settings.
-- Compile the SCSS using your tool of choice (`sass theme/main.scss`).
-- Copy and paste the CSS to your subreddit.
-- Alternatively, there's a script in ./bin/publish that you might find interesting.
+1. Copy all the images from `images` to your subreddit, preserving the original file names.
+2. Set a square or circular header image in your subreddit settings.
+3. Compile the SCSS using your tool of choice (`sass theme/main.scss`).
+4. Copy and paste the CSS to your subreddit.
+5. Alternatively, there's a script in ./bin/publish that automates steps 3 and 4.
 
 #### License
 
