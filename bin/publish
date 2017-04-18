@@ -1,26 +1,28 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Ask immediately to avoid "lag"
-print 'Describe your changes: '
-reason = gets.chomp
-
 require 'bundler/setup'
 require 'dotenv'
 require 'redd'
 require 'sass'
 
+# Load environment variables
 Dotenv.load
 
-options = {}
-if ENV['SUBREDDIT'].casecmp('redd').zero?
-  options['readers-word'] = '"programmers"'
-  options['page-accent-color'] = '#B10DC9'
-end
+# Get the main file and its contents
 path = File.join(__dir__, '../theme/main.scss')
 scss = File.read(path)
-options.each { |option, value| scss.prepend("$#{option}: #{value};\n") }
 
+# Subreddit specific tweaks
+case ENV['SUBREDDIT'].downcase
+when 'redd'
+  scss.prepend <<-EOF
+    $readers-word: "programmers";
+    $page-accent-color: #B10DC9;
+  EOF
+end
+
+# Parse SCSS into CSS
 begin
   parsed = Sass::Engine.new(scss, syntax: :scss, filename: path).render
 rescue Sass::SyntaxError => e
@@ -28,12 +30,12 @@ rescue Sass::SyntaxError => e
   exit 1
 end
 
-subreddit = Redd.it(
-  user_agent: 'Redd:Theme Publisher:v0.1.0 (by /u/Mustermind)',
-  client_id: ENV.fetch('CLIENT_ID'),
-  secret: ENV.fetch('SECRET'),
-  username: ENV.fetch('USERNAME'),
-  password: ENV.fetch('PASSWORD')
-).subreddit(ENV.fetch('SUBREDDIT'))
-
-subreddit.update_stylesheet(parsed, reason: reason)
+# Login and upload the stylesheet
+Redd
+  .it(user_agent: 'Redd:Theme Publisher:v0.1.0 (by /u/Mustermind)',
+      client_id: ENV.fetch('CLIENT_ID'),
+      secret: ENV.fetch('SECRET'),
+      username: ENV.fetch('USERNAME'),
+      password: ENV.fetch('PASSWORD'))
+  .subreddit(ENV.fetch('SUBREDDIT'))
+  .update_stylesheet(parsed)
