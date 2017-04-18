@@ -8,6 +8,10 @@
     max-width: $sidebar-width;
   }
 
+  .login-form-side {
+    border: 1px dashed $page-accent-color;
+  }
+
   // Search Bar
   .spacer:nth-of-type(1) {
     margin-top: 0;
