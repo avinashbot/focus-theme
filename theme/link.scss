@@ -13,7 +13,7 @@ body.listing-page #siteTable {
   }
 
   body.res &:not(.RES-keyNav-activeThing):hover {
-    border-right: 2px solid transparentize($page-accent-color, 0.5);
+    border-right: 2px solid transparentize($page-accent-color, 0.75);
   }
 
   .rank {
