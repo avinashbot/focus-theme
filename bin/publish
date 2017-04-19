@@ -19,6 +19,7 @@ when 'redd'
   scss.prepend <<-EOF
     $readers-word: "programmers";
     $page-accent-color: #B10DC9;
+    $page-element-transparency: 1;
   EOF
 end
 
