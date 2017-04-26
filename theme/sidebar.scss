@@ -56,20 +56,24 @@
 
   .usertext-body {
     padding-top: 5px;
-  }
 
-  .usertext-body a[href*="focus-button"] {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-    color: $page-accent-color;
-    border: 1px dashed $page-accent-color;
-    height: 30px;
-    line-height: 30px;
-    font-size: 12px;
+    a[href*="focus-button"] {
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      color: $page-accent-color;
+      border: 1px dashed $page-accent-color;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
 
-    &:hover {
-      border-style: solid;
+      &:hover {
+        border-style: solid;
+      }
+    }
+
+    a[href^="#/RES_SR_Config/NightModeCompatible"] {
+      display: none;
     }
   }
 
