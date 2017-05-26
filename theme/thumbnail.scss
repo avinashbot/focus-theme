@@ -1,10 +1,7 @@
 .thumbnail {
   width: 50px;
   border-radius: 70px;
-
-  &.default, &.self, &.image, &.spoiler {
-    background-position-x: -10px; // spritesheets, eh?
-  }
+  background-position-x: -10px !important;
 
   img {
     height: 50px;
